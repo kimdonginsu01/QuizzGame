@@ -1,0 +1,220 @@
+{
+    "tests": [
+        {
+            "id": 1,
+            "name": "Ai thông minh hơn học sinh lớp 5?",
+            "icon": "fa-solid fa-school",
+            "time": 0.1,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Loại nước giải khát nào chứa sắt và canxi?",
+                    "answers": [
+                        {
+                            "id": "1_1a",
+                            "content": "Cafe"
+                        },
+                        {
+                            "id": "1_1b",
+                            "content": "Coca"
+                        },
+                        {
+                            "id": "1_1c",
+                            "content": "7 UP"
+                        },
+                        {
+                            "id": "1_1d",
+                            "content": "Cam ép"
+                        }
+                    ],
+                    "correctAnswers": ["1_1a", "1_1b"],
+                    "point": 5
+                },
+                {
+                    "id": 2,
+                    "question": "Đất nước nào là quê hương của chú mèo Doremon?",
+                    "answers": [
+                        {
+                            "id": "1_2a",
+                            "content": "Nhật Bản"
+                        },
+                        {
+                            "id": "1_2b",
+                            "content": "Australia"
+                        },
+                        {
+                            "id": "1_2c",
+                            "content": "Đan Mạch"
+                        },
+                        {
+                            "id": "1_2d",
+                            "content": "Thái Lan"
+                        }
+                    ],
+                    "correctAnswers": ["1_2a"],
+                    "point": 10
+                },
+                {
+                    "id": 3,
+                    "question": "Từ nào còn thiếu trong câu thành ngữ sau: \"Ba chìm ... nổi\"?",
+                    "answers": [
+                        {
+                            "id": "1_3a",
+                            "content": "Sáu"
+                        },
+                        {
+                            "id": "1_3b",
+                            "content": "Bảy"
+                        },
+                        {
+                            "id": "1_3c",
+                            "content": "Tám"
+                        },
+                        {
+                            "id": "1_3d",
+                            "content": "Chín"
+                        }
+                    ],
+                    "correctAnswers": ["1_3b"],
+                    "point": 15
+                },
+                {
+                    "id": 4,
+                    "question": "Loại nước giải khát nào chứa sắt và canxi?",
+                    "answers": [
+                        {
+                            "id": "1_4a",
+                            "content": "Cafe"
+                        },
+                        {
+                            "id": "1_4b",
+                            "content": "Coca"
+                        },
+                        {
+                            "id": "1_4c",
+                            "content": "7 UP"
+                        },
+                        {
+                            "id": "1_4d",
+                            "content": "Cam ép"
+                        }
+                    ],
+                    "correctAnswers": ["1_4a"],
+                    "point": 20
+                },
+                {
+                    "id": 5,
+                    "question": "Đất nước nào là quê hương của chú mèo Doremon?",
+                    "answers": [
+                        {
+                            "id": "1_5a",
+                            "content": "Nhật Bản"
+                        },
+                        {
+                            "id": "1_5b",
+                            "content": "Australia"
+                        },
+                        {
+                            "id": "1_5c",
+                            "content": "Đan Mạch"
+                        },
+                        {
+                            "id": "1_5d",
+                            "content": "Thái Lan"
+                        }
+                    ],
+                    "correctAnswers": ["1_5a"],
+                    "point": 25
+                },
+                {
+                    "id": 6,
+                    "question": "Từ nào còn thiếu trong câu thành ngữ sau: \"Ba chìm ... nổi\"?",
+                    "answers": [
+                        {
+                            "id": "1_6a",
+                            "content": "Sáu"
+                        },
+                        {
+                            "id": "1_6b",
+                            "content": "Bảy"
+                        },
+                        {
+                            "id": "1_6c",
+                            "content": "Tám"
+                        },
+                        {
+                            "id": "1_6d",
+                            "content": "Chín"
+                        }
+                    ],
+                    "correctAnswers": ["1_6b"],
+                    "point": 30
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Ai là triệu phú?",
+            "icon": "fa-solid fa-sack-dollar",
+            "time": 2,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Anh buồn có chỗ thở than, em buồn như ngọn .... tàn sắp khuya",
+                    "answers": [
+                        {
+                            "id": "2_1a",
+                            "content": "Đăng"
+                        },
+                        {
+                            "id": "2_1b",
+                            "content": "Nhang"
+                        },
+                        {
+                            "id": "2_1c",
+                            "content": "Đuốc"
+                        },
+                        {
+                            "id": "2_1d",
+                            "content": "Diêm"
+                        }
+                    ],
+                    "correctAnswers": ["2_1b"],
+                    "point": 20
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Đấu trường 100",
+            "icon": "fa-solid fa-people-group",
+            "time": 3,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Cờ bí dí ...?",
+                    "answers": [
+                        {
+                            "id": "3_1a",
+                            "content": "Tốt"
+                        },
+                        {
+                            "id": "3_1b",
+                            "content": "Tướng"
+                        },
+                        {
+                            "id": "3_1c",
+                            "content": "Xe"
+                        },
+                        {
+                            "id": "3_1d",
+                            "content": "Pháo"
+                        }
+                    ],
+                    "correctAnswers": ["3_1a"],
+                    "point": 25
+                }
+            ]
+        }
+    ]
+}
