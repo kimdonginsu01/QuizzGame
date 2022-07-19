@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/grid.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -59,9 +60,26 @@
       </header>
       <div class="body grid wide">
         <div class="row app-content">
-          <div class="sidebar col l-2 m-0">
+          <div class="sidebar col l-2">
             <div class="sidebar-description">Chọn bài test phù hợp</div>
             <div class="sidebar-list">
+            </div>
+          </div>
+          <div class="swiper-container col l-10">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/img/banner1.jpg" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="./assets/img/banner2.jpg" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="./assets/img/banner3.jpg" alt="" srcset=""></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+              
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
           <div class="scoreboard col l-2 hide">
@@ -121,11 +139,33 @@
       onsubmit: () => {
         var startBtn = document.querySelector('.sign-in-main')
         var listTest = document.querySelector('.test-main')
+
         startBtn.classList.add('hide')
         listTest.classList.remove('hide')
       }
     })
 
+  </script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+
+      loop: true,
+    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+  });
   </script>
 </body>
 

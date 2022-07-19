@@ -76,6 +76,7 @@ async function handleQuestion(tests) {
             document.querySelector('.submit-btn.btn').classList.remove('hide')
             document.querySelector('.sidebar').classList.add('hide')
             document.querySelector('.scoreboard').classList.remove('hide')
+            document.querySelector('.swiper-container').classList.add('hide')
             document.querySelector('.scoreboard__test-name').innerHTML = `${currTest.name}`
             handleTimer(currTest, listQuest)
             handleAnswer(tests, listQuest)

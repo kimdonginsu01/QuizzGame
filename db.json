@@ -4,7 +4,7 @@
             "id": 1,
             "name": "Ai thông minh hơn học sinh lớp 5?",
             "icon": "fa-solid fa-school",
-            "time": 0.1,
+            "time": 1,
             "questions": [
                 {
                     "id": 1,
