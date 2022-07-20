@@ -386,7 +386,9 @@
 }
 
 .submit-btn:disabled {
-  filter: brightness(0.8);
+  /* filter: brightness(0.8); */
+  opacity: 0.5;
+  cursor: default;
 }
 
 .submit-btn:disabled:hover {

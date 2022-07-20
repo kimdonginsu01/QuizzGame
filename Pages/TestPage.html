@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+    <div class="test-main">
+        <div class="test-list">
+          <header class="header">
+            <div class="header__logo">
+              <img class="logo" src="../assets/img/logo.png" alt="">
+              <span class="slogan hide-on-mobile-tablet">Test your IQ</span>
+            </div>
+            <div class="header__search hide-on-mobile">
+              <i class="header-search__icon fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="search__input" placeholder="Search...">
+            </div>
+            <div class="header__user">
+              <a href="#" class="user__history hide-on-mobile-tablet">Xem lại các bài test</a>
+              <i class="user__icon fa-solid fa-user"></i>
+            </div>
+          </header>
+          <div class="body grid wide">
+            <div class="row app-content">
+              <div class="scoreboard col l-2 m-12 c-12">
+                <div class="scoreboard-description">Scoreboard</div>
+                <div class="timer">
+                  <i class="timer__icon fa-solid fa-hourglass-empty"></i>
+                  <span class="timer-countdown">00: 00</span>
+                </div>
+                <div class="scoreboard__test-name"></div>
+                <div class="scoreboard_pt"></div>
+              </div>
+              <div class="question-section col l-10 m-12 c-12">
+                  <ul class="questions-list grid">
+                    <div class="row"></div>
+                  </ul>
+                  <div class="submit-container">
+                    <button class="submit-btn btn">Submit</button>
+                    <button class="redo-btn btn hide">Trở về</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scoreboard__modal">
+        <div class="modal-container">
+          <div class="modal-body">
+            <img src="../assets/img/award.svg" alt="" class="modal-body-icon">
+            <p class="modal-congrats">
+              Điểm số:
+              <span class="modal-score"></span>
+            </p>
+            <p class="congrats-description"></p>
+          </div>
+          <div class="modal-close">
+            <button class="close-btn btn">Đóng</button>
+          </div>
+        </div>
+      </div>
+  
+      
+    <script src="../assets/script/testpage.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+  
+        loop: true,
+      
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+    });
+    </script>
+</body>
+</html>
