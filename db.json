@@ -27,31 +27,31 @@
                             "content": "Cam ép"
                         }
                     ],
-                    "correctAnswers": ["1_1a", "1_1b"],
+                    "correctAnswers": ["1_1a"],
                     "point": 5
                 },
                 {
                     "id": 2,
-                    "question": "Đất nước nào là quê hương của chú mèo Doremon?",
+                    "question": " Củ gì tên gọi như tiền, củ gì nghe cứ như quên đường về?",
                     "answers": [
                         {
                             "id": "1_2a",
-                            "content": "Nhật Bản"
+                            "content": "Củ cà rốt"
                         },
                         {
                             "id": "1_2b",
-                            "content": "Australia"
+                            "content": "Củ su hào"
                         },
                         {
                             "id": "1_2c",
-                            "content": "Đan Mạch"
+                            "content": "Củ sắn"
                         },
                         {
                             "id": "1_2d",
-                            "content": "Thái Lan"
+                            "content": "Củ lạc"
                         }
                     ],
-                    "correctAnswers": ["1_2a"],
+                    "correctAnswers": ["1_2b", "1_2d"],
                     "point": 10
                 },
                 {
@@ -76,79 +76,175 @@
                         }
                     ],
                     "correctAnswers": ["1_3b"],
-                    "point": 15
+                    "point": 5
                 },
                 {
                     "id": 4,
-                    "question": "Loại nước giải khát nào chứa sắt và canxi?",
+                    "question": "Anh trai của cháu gái gọi bạn bằng cô là gì của bạn?",
                     "answers": [
                         {
                             "id": "1_4a",
-                            "content": "Cafe"
+                            "content": "Anh"
                         },
                         {
                             "id": "1_4b",
-                            "content": "Coca"
+                            "content": "Chị"
                         },
                         {
                             "id": "1_4c",
-                            "content": "7 UP"
+                            "content": "Cô"
                         },
                         {
                             "id": "1_4d",
-                            "content": "Cam ép"
+                            "content": "Cháu"
                         }
                     ],
-                    "correctAnswers": ["1_4a"],
-                    "point": 20
+                    "correctAnswers": ["1_4d"],
+                    "point": 15
                 },
                 {
                     "id": 5,
-                    "question": "Đất nước nào là quê hương của chú mèo Doremon?",
+                    "question": "Cây gì không có lá?",
                     "answers": [
                         {
                             "id": "1_5a",
-                            "content": "Nhật Bản"
+                            "content": "Cây mít"
                         },
                         {
                             "id": "1_5b",
-                            "content": "Australia"
+                            "content": "Cây ATM"
                         },
                         {
                             "id": "1_5c",
-                            "content": "Đan Mạch"
+                            "content": "Cây xăng"
                         },
                         {
                             "id": "1_5d",
-                            "content": "Thái Lan"
+                            "content": "Cây xoài"
                         }
                     ],
-                    "correctAnswers": ["1_5a"],
-                    "point": 25
+                    "correctAnswers": ["1_5b", "1_5c"],
+                    "point": 20
                 },
                 {
                     "id": 6,
-                    "question": "Từ nào còn thiếu trong câu thành ngữ sau: \"Ba chìm ... nổi\"?",
+                    "question": "Theo 1977 Vlogs, cậu Vàng được bán với giá bao nhiêu?",
                     "answers": [
                         {
                             "id": "1_6a",
-                            "content": "Sáu"
+                            "content": "2000$"
                         },
                         {
                             "id": "1_6b",
-                            "content": "Bảy"
+                            "content": "3000$"
                         },
                         {
                             "id": "1_6c",
-                            "content": "Tám"
+                            "content": "3000$"
                         },
                         {
                             "id": "1_6d",
-                            "content": "Chín"
+                            "content": "5000$"
                         }
                     ],
-                    "correctAnswers": ["1_6b"],
-                    "point": 30
+                    "correctAnswers": ["1_6d"],
+                    "point": 10
+                },
+                {
+                    "id": 7,
+                    "question": "Vừa bằng quả ổi, khi nổi khi chìm? Con gì?",
+                    "answers": [
+                        {
+                            "id": "1_7a",
+                            "content": "Con ốc"
+                        },
+                        {
+                            "id": "1_7b",
+                            "content": "Con cò"
+                        },
+                        {
+                            "id": "1_7c",
+                            "content": "Con bò"
+                        },
+                        {
+                            "id": "1_7d",
+                            "content": "Con gà"
+                        }
+                    ],
+                    "correctAnswers": ["1_7a"],
+                    "point": 10
+                },
+                {
+                    "id": 8,
+                    "question": "Vừa bằng que diêm, khi chìm khi nổi?",
+                    "answers": [
+                        {
+                            "id": "1_8a",
+                            "content": "Con rắn"
+                        },
+                        {
+                            "id": "1_8b",
+                            "content": "Con loăng quăng"
+                        },
+                        {
+                            "id": "1_8c",
+                            "content": "Con đỉa"
+                        },
+                        {
+                            "id": "1_8d",
+                            "content": "Con giun"
+                        }
+                    ],
+                    "correctAnswers": ["1_8c"],
+                    "point": 5
+                },
+                {
+                    "id": 9,
+                    "question": "Câu \"Cái khó ló cái khôn\" thuộc thể loại gì?",
+                    "answers": [
+                        {
+                            "id": "1_9a",
+                            "content": "Ca dao"
+                        },
+                        {
+                            "id": "1_9b",
+                            "content": "Tục ngữ"
+                        },
+                        {
+                            "id": "1_9c",
+                            "content": "Thành ngữ"
+                        },
+                        {
+                            "id": "1_9d",
+                            "content": "J ai bik"
+                        }
+                    ],
+                    "correctAnswers": ["1_9c"],
+                    "point": 5
+                },
+                {
+                    "id": 10,
+                    "question": "Bộ tóc của em Tuyến trông như thế nào?",
+                    "answers": [
+                        {
+                            "id": "1_10a",
+                            "content": "Đẹp"
+                        },
+                        {
+                            "id": "1_10b",
+                            "content": "Còn phải bàn?"
+                        },
+                        {
+                            "id": "1_10c",
+                            "content": "Tuyệt vời"
+                        },
+                        {
+                            "id": "1_10d",
+                            "content": "10 điểm"
+                        }
+                    ],
+                    "correctAnswers": ["1_10a", "1_10b", "1_10c", "1_10d"],
+                    "point": 5
                 }
             ]
         },

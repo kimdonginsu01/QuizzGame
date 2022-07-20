@@ -1,7 +1,23 @@
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
+    .sidebar-list {
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar-item.btn {
+        min-width: 200px;
+    }
     .hide-on-mobile-tablet {
         display: none;
+    }
+    .scoreboard {
+        position: inherit;
+        top: 0;
+        transform: none;
+        height: 160px;
+    }
+    .body.grid {
+        padding: 0 4px;
     }
 }
 
@@ -11,5 +27,14 @@
 }
 /* Mobile */
 @media (max-width: 739px) {
-    
+    .hide-on-mobile {
+        display: none;
+    }
+    .sidebar-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        text-align: center;
+    }
 }

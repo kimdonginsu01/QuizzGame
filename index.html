@@ -47,25 +47,25 @@
       <header class="header">
         <div class="header__logo">
           <img class="logo" src="./assets/img/logo.png" alt="">
-          <span class="slogan">Test your IQ</span>
+          <span class="slogan hide-on-mobile-tablet">Test your IQ</span>
         </div>
-        <div class="header__search">
+        <div class="header__search hide-on-mobile">
           <i class="header-search__icon fa-solid fa-magnifying-glass"></i>
           <input type="text" class="search__input" placeholder="Search...">
         </div>
         <div class="header__user">
-          <a href="#" class="user__history">Xem lại các bài test</a>
+          <a href="#" class="user__history hide-on-mobile-tablet">Xem lại các bài test</a>
           <i class="user__icon fa-solid fa-user"></i>
         </div>
       </header>
       <div class="body grid wide">
         <div class="row app-content">
-          <div class="sidebar col l-2">
+          <div class="sidebar col l-2 m-12 c-12">
             <div class="sidebar-description">Chọn bài test phù hợp</div>
             <div class="sidebar-list">
             </div>
           </div>
-          <div class="swiper-container col l-10">
+          <div class="swiper-container col l-10 m-12 c-12">
             <div class="swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
@@ -82,7 +82,7 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="scoreboard col l-2 hide">
+          <div class="scoreboard col l-2 m-12 c-12 hide">
             <div class="scoreboard-description">Scoreboard</div>
             <div class="timer hide">
               <i class="timer__icon fa-solid fa-hourglass-empty"></i>
@@ -91,11 +91,7 @@
             <div class="scoreboard__test-name"></div>
             <div class="scoreboard_pt"></div>
           </div>
-          <div class="question-section col l-10 m-12">
-            <div class="timer hide">
-              <i class="timer__icon fa-solid fa-hourglass-empty"></i>
-              <span class="timer-countdown">00:00</span>
-            </div>
+          <div class="question-section col l-10 m-12 c-12">
               <ul class="questions-list grid">
                 <div class="row"></div>
               </ul>
