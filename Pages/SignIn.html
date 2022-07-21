@@ -45,8 +45,34 @@
         Validator.isRequired('#fullname', 'Vui lòng nhập họ tên'),
         Validator.isEmail('#email')
       ],
-      onsubmit: () => {
-        window.location.href = "./homepage.html"
+      onsubmit: (data) => {
+        var usersApi = 'http://localhost:3000/users'
+        fetch(usersApi)
+          .then(response => response.json())
+          .then((users) => {
+            var members = users.map(user => user.email)
+            if (members.includes(data.email)) {
+              localStorage.setItem('User', JSON.stringify(data))
+              window.location.href = `./homepage.html`
+            }
+            else createNewUser()
+          })
+
+        function createNewUser() {
+          options = {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          }
+          fetch(usersApi, options)
+            .then(response => response.json())
+            .then(data => {
+              localStorage.setItem('User', JSON.stringify(data))
+              window.location.href = `./homepage.html`
+            })
+        }
       }
     })
 

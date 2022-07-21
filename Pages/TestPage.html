@@ -21,13 +21,23 @@
               <img class="logo" src="../assets/img/logo.png" alt="">
               <span class="slogan hide-on-mobile-tablet">Test your IQ</span>
             </div>
-            <div class="header__search hide-on-mobile">
-              <i class="header-search__icon fa-solid fa-magnifying-glass"></i>
-              <input type="text" class="search__input" placeholder="Search...">
+            <div class="header__test-name hide-on-mobile">
             </div>
             <div class="header__user">
-              <a href="#" class="user__history hide-on-mobile-tablet">Xem lại các bài test</a>
-              <i class="user__icon fa-solid fa-user"></i>
+              <span class="user-greeting"></span>
+              <div class="user-control">
+                <i class="user-icon fa-solid fa-user"></i>
+                <ul class="user-options">
+                  <li><a href="#" class="options-item user-info">Thông tin cá nhân</a></li>
+                  <li><a href="#" class="options-item user-history">Lịch sử bài test</a></li>
+                  <li>
+                    <a href="./SignIn.html" class="options-item user-logout">
+                    Đăng xuất
+                    <i class="logout-icon fa-solid fa-power-off"></i>
+                    </a>
+                </li>
+                </ul>
+              </div>
             </div>
           </header>
           <div class="body grid wide">
@@ -35,19 +45,22 @@
               <div class="scoreboard col l-2 m-12 c-12">
                 <div class="scoreboard-description">Scoreboard</div>
                 <div class="timer">
-                  <i class="timer__icon fa-solid fa-hourglass-empty"></i>
-                  <span class="timer-countdown">00: 00</span>
+                  <div class="timer-description">
+                    <i class="timer__icon fa-solid fa-hourglass-empty"></i>
+                  </div>
+                  <span class="timer-countdown">00: 00s</span>
                 </div>
-                <div class="scoreboard__test-name"></div>
                 <div class="scoreboard_pt"></div>
+                <div class="scoreboard_result"></div>
               </div>
               <div class="question-section col l-10 m-12 c-12">
-                  <ul class="questions-list grid">
-                    <div class="row"></div>
+                <ul class="questions-list grid">
+                  <div class="row"></div>
+                  <div class="result-preview hide"></div>
                   </ul>
                   <div class="submit-container">
                     <button class="submit-btn btn">Submit</button>
-                    <button class="redo-btn btn hide">Trở về</button>
+                    <button class="back-btn btn">Trở về</button>
                   </div>
               </div>
             </div>

@@ -27,8 +27,20 @@
             <input type="text" class="search__input" placeholder="Search...">
           </div>
           <div class="header__user">
-            <a href="#" class="user__history hide-on-mobile-tablet">Xem lại các bài test</a>
-            <i class="user__icon fa-solid fa-user"></i>
+            <span class="user-greeting"></span>
+            <div class="user-control">
+              <i class="user-icon fa-solid fa-user"></i>
+              <ul class="user-options">
+                <li><a href="#" class="options-item user-info">Thông tin cá nhân</a></li>
+                <li><a href="#" class="options-item user-history">Lịch sử bài test</a></li>
+                <li>
+                  <a href="./SignIn.html" class="options-item user-logout">
+                  Đăng xuất
+                  <i class="logout-icon fa-solid fa-power-off"></i>
+                  </a>
+              </li>
+              </ul>
+            </div>
           </div>
         </header>
         <div class="body grid wide">
@@ -47,32 +59,12 @@
                   <div class="swiper-slide"><img src="../assets/img/banner2.jpg" alt="" srcset=""></div>
                   <div class="swiper-slide"><img src="../assets/img/banner3.jpg" alt="" srcset=""></div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
                 
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
               </div>
             </div>
-            <!-- <div class="scoreboard col l-2 m-12 c-12 hide">
-              <div class="scoreboard-description">Scoreboard</div>
-              <div class="timer hide">
-                <i class="timer__icon fa-solid fa-hourglass-empty"></i>
-                <span class="timer-countdown">00: 00</span>
-              </div>
-              <div class="scoreboard__test-name"></div>
-              <div class="scoreboard_pt"></div>
-            </div>
-            <div class="question-section col l-10 m-12 c-12">
-                <ul class="questions-list grid">
-                  <div class="row"></div>
-                </ul>
-                <div class="submit-container">
-                  <button class="submit-btn btn hide">Submit</button>
-                  <button class="redo-btn btn hide">Trở về</button>
-                </div>
-            </div> -->
           </div>
         </div>
       </div>

@@ -1,316 +1,367 @@
 {
-    "tests": [
+  "tests": [
+    {
+      "id": 1,
+      "name": "Ai thông minh hơn học sinh lớp 5?",
+      "icon": "fa-solid fa-school",
+      "time": 1,
+      "questions": [
         {
-            "id": 1,
-            "name": "Ai thông minh hơn học sinh lớp 5?",
-            "icon": "fa-solid fa-school",
-            "time": 0.1,
-            "questions": [
-                {
-                    "id": 1,
-                    "question": "Loại nước giải khát nào chứa sắt và canxi?",
-                    "answers": [
-                        {
-                            "id": "1_1a",
-                            "content": "Cafe"
-                        },
-                        {
-                            "id": "1_1b",
-                            "content": "Coca"
-                        },
-                        {
-                            "id": "1_1c",
-                            "content": "7 UP"
-                        },
-                        {
-                            "id": "1_1d",
-                            "content": "Cam ép"
-                        }
-                    ],
-                    "correctAnswers": ["1_1a"],
-                    "point": 5
-                },
-                {
-                    "id": 2,
-                    "question": " Củ gì tên gọi như tiền, củ gì nghe cứ như quên đường về?",
-                    "answers": [
-                        {
-                            "id": "1_2a",
-                            "content": "Củ cà rốt"
-                        },
-                        {
-                            "id": "1_2b",
-                            "content": "Củ su hào"
-                        },
-                        {
-                            "id": "1_2c",
-                            "content": "Củ sắn"
-                        },
-                        {
-                            "id": "1_2d",
-                            "content": "Củ lạc"
-                        }
-                    ],
-                    "correctAnswers": ["1_2b", "1_2d"],
-                    "point": 10
-                },
-                {
-                    "id": 3,
-                    "question": "Từ nào còn thiếu trong câu thành ngữ sau: \"Ba chìm ... nổi\"?",
-                    "answers": [
-                        {
-                            "id": "1_3a",
-                            "content": "Sáu"
-                        },
-                        {
-                            "id": "1_3b",
-                            "content": "Bảy"
-                        },
-                        {
-                            "id": "1_3c",
-                            "content": "Tám"
-                        },
-                        {
-                            "id": "1_3d",
-                            "content": "Chín"
-                        }
-                    ],
-                    "correctAnswers": ["1_3b"],
-                    "point": 5
-                },
-                {
-                    "id": 4,
-                    "question": "Anh trai của cháu gái gọi bạn bằng cô là gì của bạn?",
-                    "answers": [
-                        {
-                            "id": "1_4a",
-                            "content": "Anh"
-                        },
-                        {
-                            "id": "1_4b",
-                            "content": "Chị"
-                        },
-                        {
-                            "id": "1_4c",
-                            "content": "Cô"
-                        },
-                        {
-                            "id": "1_4d",
-                            "content": "Cháu"
-                        }
-                    ],
-                    "correctAnswers": ["1_4d"],
-                    "point": 15
-                },
-                {
-                    "id": 5,
-                    "question": "Cây gì không có lá?",
-                    "answers": [
-                        {
-                            "id": "1_5a",
-                            "content": "Cây mít"
-                        },
-                        {
-                            "id": "1_5b",
-                            "content": "Cây ATM"
-                        },
-                        {
-                            "id": "1_5c",
-                            "content": "Cây xăng"
-                        },
-                        {
-                            "id": "1_5d",
-                            "content": "Cây xoài"
-                        }
-                    ],
-                    "correctAnswers": ["1_5b", "1_5c"],
-                    "point": 20
-                },
-                {
-                    "id": 6,
-                    "question": "Theo 1977 Vlogs, cậu Vàng được bán với giá bao nhiêu?",
-                    "answers": [
-                        {
-                            "id": "1_6a",
-                            "content": "2000$"
-                        },
-                        {
-                            "id": "1_6b",
-                            "content": "3000$"
-                        },
-                        {
-                            "id": "1_6c",
-                            "content": "3000$"
-                        },
-                        {
-                            "id": "1_6d",
-                            "content": "5000$"
-                        }
-                    ],
-                    "correctAnswers": ["1_6d"],
-                    "point": 10
-                },
-                {
-                    "id": 7,
-                    "question": "Vừa bằng quả ổi, khi nổi khi chìm? Con gì?",
-                    "answers": [
-                        {
-                            "id": "1_7a",
-                            "content": "Con ốc"
-                        },
-                        {
-                            "id": "1_7b",
-                            "content": "Con cò"
-                        },
-                        {
-                            "id": "1_7c",
-                            "content": "Con bò"
-                        },
-                        {
-                            "id": "1_7d",
-                            "content": "Con gà"
-                        }
-                    ],
-                    "correctAnswers": ["1_7a"],
-                    "point": 10
-                },
-                {
-                    "id": 8,
-                    "question": "Vừa bằng que diêm, khi chìm khi nổi?",
-                    "answers": [
-                        {
-                            "id": "1_8a",
-                            "content": "Con rắn"
-                        },
-                        {
-                            "id": "1_8b",
-                            "content": "Con loăng quăng"
-                        },
-                        {
-                            "id": "1_8c",
-                            "content": "Con đỉa"
-                        },
-                        {
-                            "id": "1_8d",
-                            "content": "Con giun"
-                        }
-                    ],
-                    "correctAnswers": ["1_8c"],
-                    "point": 5
-                },
-                {
-                    "id": 9,
-                    "question": "Câu \"Cái khó ló cái khôn\" thuộc thể loại gì?",
-                    "answers": [
-                        {
-                            "id": "1_9a",
-                            "content": "Ca dao"
-                        },
-                        {
-                            "id": "1_9b",
-                            "content": "Tục ngữ"
-                        },
-                        {
-                            "id": "1_9c",
-                            "content": "Thành ngữ"
-                        },
-                        {
-                            "id": "1_9d",
-                            "content": "J ai bik"
-                        }
-                    ],
-                    "correctAnswers": ["1_9c"],
-                    "point": 5
-                },
-                {
-                    "id": 10,
-                    "question": "Bộ tóc của em Tuyến trông như thế nào?",
-                    "answers": [
-                        {
-                            "id": "1_10a",
-                            "content": "Đẹp"
-                        },
-                        {
-                            "id": "1_10b",
-                            "content": "Còn phải bàn?"
-                        },
-                        {
-                            "id": "1_10c",
-                            "content": "Tuyệt vời"
-                        },
-                        {
-                            "id": "1_10d",
-                            "content": "10 điểm"
-                        }
-                    ],
-                    "correctAnswers": ["1_10a", "1_10b", "1_10c", "1_10d"],
-                    "point": 5
-                }
-            ]
+          "id": 1,
+          "question": "Loại nước giải khát nào chứa sắt và canxi?",
+          "answers": [
+            {
+              "id": "1_1a",
+              "content": "Cafe"
+            },
+            {
+              "id": "1_1b",
+              "content": "Coca"
+            },
+            {
+              "id": "1_1c",
+              "content": "7 UP"
+            },
+            {
+              "id": "1_1d",
+              "content": "Cam ép"
+            }
+          ],
+          "correctAnswers": [
+            "1_1a"
+          ],
+          "point": 5
         },
         {
-            "id": 2,
-            "name": "Ai là triệu phú?",
-            "icon": "fa-solid fa-sack-dollar",
-            "time": 2,
-            "questions": [
-                {
-                    "id": 1,
-                    "question": "Anh buồn có chỗ thở than, em buồn như ngọn .... tàn sắp khuya",
-                    "answers": [
-                        {
-                            "id": "2_1a",
-                            "content": "Đăng"
-                        },
-                        {
-                            "id": "2_1b",
-                            "content": "Nhang"
-                        },
-                        {
-                            "id": "2_1c",
-                            "content": "Đuốc"
-                        },
-                        {
-                            "id": "2_1d",
-                            "content": "Diêm"
-                        }
-                    ],
-                    "correctAnswers": ["2_1b"],
-                    "point": 20
-                }
-            ]
+          "id": 2,
+          "question": " Củ gì tên gọi như tiền, củ gì nghe cứ như quên đường về?",
+          "answers": [
+            {
+              "id": "1_2a",
+              "content": "Củ cà rốt"
+            },
+            {
+              "id": "1_2b",
+              "content": "Củ su hào"
+            },
+            {
+              "id": "1_2c",
+              "content": "Củ sắn"
+            },
+            {
+              "id": "1_2d",
+              "content": "Củ lạc"
+            }
+          ],
+          "correctAnswers": [
+            "1_2b",
+            "1_2d"
+          ],
+          "point": 10
         },
         {
-            "id": 3,
-            "name": "Đấu trường 100",
-            "icon": "fa-solid fa-people-group",
-            "time": 3,
-            "questions": [
-                {
-                    "id": 1,
-                    "question": "Cờ bí dí ...?",
-                    "answers": [
-                        {
-                            "id": "3_1a",
-                            "content": "Tốt"
-                        },
-                        {
-                            "id": "3_1b",
-                            "content": "Tướng"
-                        },
-                        {
-                            "id": "3_1c",
-                            "content": "Xe"
-                        },
-                        {
-                            "id": "3_1d",
-                            "content": "Pháo"
-                        }
-                    ],
-                    "correctAnswers": ["3_1a"],
-                    "point": 25
-                }
-            ]
+          "id": 3,
+          "question": "Từ nào còn thiếu trong câu thành ngữ sau: \"Ba chìm ... nổi\"?",
+          "answers": [
+            {
+              "id": "1_3a",
+              "content": "Sáu"
+            },
+            {
+              "id": "1_3b",
+              "content": "Bảy"
+            },
+            {
+              "id": "1_3c",
+              "content": "Tám"
+            },
+            {
+              "id": "1_3d",
+              "content": "Chín"
+            }
+          ],
+          "correctAnswers": [
+            "1_3b"
+          ],
+          "point": 5
+        },
+        {
+          "id": 4,
+          "question": "Anh trai của cháu gái gọi bạn bằng cô là gì của bạn?",
+          "answers": [
+            {
+              "id": "1_4a",
+              "content": "Anh"
+            },
+            {
+              "id": "1_4b",
+              "content": "Chị"
+            },
+            {
+              "id": "1_4c",
+              "content": "Cô"
+            },
+            {
+              "id": "1_4d",
+              "content": "Cháu"
+            }
+          ],
+          "correctAnswers": [
+            "1_4d"
+          ],
+          "point": 15
+        },
+        {
+          "id": 5,
+          "question": "Cây gì không có lá?",
+          "answers": [
+            {
+              "id": "1_5a",
+              "content": "Cây mít"
+            },
+            {
+              "id": "1_5b",
+              "content": "Cây ATM"
+            },
+            {
+              "id": "1_5c",
+              "content": "Cây xăng"
+            },
+            {
+              "id": "1_5d",
+              "content": "Cây xoài"
+            }
+          ],
+          "correctAnswers": [
+            "1_5b",
+            "1_5c"
+          ],
+          "point": 20
+        },
+        {
+          "id": 6,
+          "question": "Theo 1977 Vlogs, cậu Vàng được bán với giá bao nhiêu?",
+          "answers": [
+            {
+              "id": "1_6a",
+              "content": "2000$"
+            },
+            {
+              "id": "1_6b",
+              "content": "3000$"
+            },
+            {
+              "id": "1_6c",
+              "content": "3000$"
+            },
+            {
+              "id": "1_6d",
+              "content": "5000$"
+            }
+          ],
+          "correctAnswers": [
+            "1_6d"
+          ],
+          "point": 10
+        },
+        {
+          "id": 7,
+          "question": "Vừa bằng quả ổi, khi nổi khi chìm? Con gì?",
+          "answers": [
+            {
+              "id": "1_7a",
+              "content": "Con ốc"
+            },
+            {
+              "id": "1_7b",
+              "content": "Con cò"
+            },
+            {
+              "id": "1_7c",
+              "content": "Con bò"
+            },
+            {
+              "id": "1_7d",
+              "content": "Con gà"
+            }
+          ],
+          "correctAnswers": [
+            "1_7a"
+          ],
+          "point": 10
+        },
+        {
+          "id": 8,
+          "question": "Vừa bằng que diêm, khi chìm khi nổi?",
+          "answers": [
+            {
+              "id": "1_8a",
+              "content": "Con rắn"
+            },
+            {
+              "id": "1_8b",
+              "content": "Con loăng quăng"
+            },
+            {
+              "id": "1_8c",
+              "content": "Con đỉa"
+            },
+            {
+              "id": "1_8d",
+              "content": "Con giun"
+            }
+          ],
+          "correctAnswers": [
+            "1_8c"
+          ],
+          "point": 5
+        },
+        {
+          "id": 9,
+          "question": "Câu \"Cái khó ló cái khôn\" thuộc thể loại gì?",
+          "answers": [
+            {
+              "id": "1_9a",
+              "content": "Ca dao"
+            },
+            {
+              "id": "1_9b",
+              "content": "Tục ngữ"
+            },
+            {
+              "id": "1_9c",
+              "content": "Thành ngữ"
+            },
+            {
+              "id": "1_9d",
+              "content": "J ai bik"
+            }
+          ],
+          "correctAnswers": [
+            "1_9c"
+          ],
+          "point": 5
+        },
+        {
+          "id": 10,
+          "question": "Bộ tóc của em Tuyến trông như thế nào?",
+          "answers": [
+            {
+              "id": "1_10a",
+              "content": "Đẹp"
+            },
+            {
+              "id": "1_10b",
+              "content": "Còn phải bàn?"
+            },
+            {
+              "id": "1_10c",
+              "content": "Tuyệt vời"
+            },
+            {
+              "id": "1_10d",
+              "content": "10 điểm"
+            }
+          ],
+          "correctAnswers": [
+            "1_10a",
+            "1_10b",
+            "1_10c",
+            "1_10d"
+          ],
+          "point": 5
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ai là triệu phú?",
+      "icon": "fa-solid fa-sack-dollar",
+      "time": 2,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Anh buồn có chỗ thở than, em buồn như ngọn .... tàn sắp khuya",
+          "answers": [
+            {
+              "id": "2_1a",
+              "content": "Đăng"
+            },
+            {
+              "id": "2_1b",
+              "content": "Nhang"
+            },
+            {
+              "id": "2_1c",
+              "content": "Đuốc"
+            },
+            {
+              "id": "2_1d",
+              "content": "Diêm"
+            }
+          ],
+          "correctAnswers": [
+            "2_1b"
+          ],
+          "point": 20
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Đấu trường 100",
+      "icon": "fa-solid fa-people-group",
+      "time": 3,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Cờ bí dí ...?",
+          "answers": [
+            {
+              "id": "3_1a",
+              "content": "Tốt"
+            },
+            {
+              "id": "3_1b",
+              "content": "Tướng"
+            },
+            {
+              "id": "3_1c",
+              "content": "Xe"
+            },
+            {
+              "id": "3_1d",
+              "content": "Pháo"
+            }
+          ],
+          "correctAnswers": [
+            "3_1a"
+          ],
+          "point": 25
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "fullname": "Tuyến",
+      "email": "huyzxje80@netspot.uk",
+      "id": 1
+    },
+    {
+      "fullname": "User 1",
+      "email": "tuyenminh2k1@gmail.com",
+      "id": 2
+    },
+    {
+      "fullname": "aa",
+      "email": "enacaroline2431@gmail.com",
+      "id": 3
+    },
+    {
+      "fullname": "Tuan Dang",
+      "email": "td@gmail.com",
+      "id": 4
+    }
+  ]
 }

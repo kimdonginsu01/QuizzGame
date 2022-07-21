@@ -1,15 +1,19 @@
 var url = window.location.href
-var id = url.substring(url.lastIndexOf('id=') + 1)
-
+var id = url.substring(url.lastIndexOf('?') + 1)
 var testApi = `http://localhost:3000/tests/${id}`
 
 start()
 
 async function start() {
+    renderUser()
+
     const test = await getQuests()
-    // console.log((test));
     await renderQuests(test)
-    // await handleQuestion(tests)
+}
+
+function renderUser() {
+    var user = JSON.parse(localStorage.getItem('User'))
+    document.querySelector('.user-greeting').innerHTML = `Xin chào ${user.fullname}!`
 }
 
 async function getQuests() {
@@ -37,7 +41,7 @@ async function renderQuests(test) {
             quest.answers.forEach(ans => {
                 str += `
                     <input style="display: none" type="radio" id="answer_${ans.id}" name="question_${quest.id}" value="${ans.id}">
-                    <label style="display: block" for="answer_${ans.id}" class="answer-item answer_${ans.id}">${ans.content}</label>
+                    <label style="display: block" for="answer_${ans.id}" class="answer-item answer_${ans.id}">${ans.content} <span class="answer-item--modifier"></span></label>
                 `
             })
         } 
@@ -49,7 +53,7 @@ async function renderQuests(test) {
             quest.answers.forEach(ans => {
                 str += `
                     <input style="display: none" type="checkbox" id="answer_${ans.id}" name="question_${quest.id}" value="${ans.id}">
-                    <label style="display: block" for="answer_${ans.id}" class="answer-item answer_${ans.id}">${ans.content}</label>
+                    <label style="display: block" for="answer_${ans.id}" class="answer-item answer_${ans.id}">${ans.content} <span class="answer-item--modifier"></span></label>
                 `
             }) 
         }
@@ -57,9 +61,16 @@ async function renderQuests(test) {
         return str
     })
     listQuestBlock.innerHTML = htmlsQuest.join('')
-    document.querySelector('.scoreboard__test-name').innerHTML = `${test.name}`
+    document.querySelector('.header__test-name').innerHTML = `${test.name}`
     handleTimer(test, listQuest)
     handleAnswer(listQuest)
+    handleBackBtn()
+}
+
+function handleBackBtn() {
+    document.querySelector('.back-btn').addEventListener('click', () => {
+        window.location.href = `http://127.0.0.1:5500/Pages/HomePage.html`
+    })
 }
 
 
@@ -88,9 +99,9 @@ function handleAnswer(listQuest) {
 function handleTimer(currTest, listQuest) {
     var time = currTest.time
     var countdownElement = document.querySelector('.timer-countdown')
-
-    // Quy đổi thời gian ra số giây
+    
     time *= 60
+    var totalTime = time
 
     const id = setInterval(() => {
         time--
@@ -101,9 +112,9 @@ function handleTimer(currTest, listQuest) {
         minutes = minutes < 10 ? '0' + minutes : minutes
         seconds = seconds < 10 ? '0' + seconds : seconds
         
-        countdownElement.innerHTML = `${minutes}: ${seconds}`
+        countdownElement.innerHTML = `${minutes}: ${seconds}s`
 
-        handleSubmit(listQuest, id)
+        handleSubmit(listQuest, id, totalTime, time)
         
         if (time == 0) {
             document.querySelector('.submit-btn.btn').click()
@@ -112,14 +123,15 @@ function handleTimer(currTest, listQuest) {
     }, 1000)
 }
 
-function handleSubmit(listQuest, id) {
+function handleSubmit(listQuest, id, totalTime, time) {
     document.querySelector('.submit-btn.btn').addEventListener('click', () =>  {
-        submitAnswers(listQuest)
+        submitAnswers(listQuest, totalTime, time)
         clearInterval(id)
+        document.querySelector('.result-preview').classList.remove('hide')
     })
 }
 
-function submitAnswers(listQuest) {
+function submitAnswers(listQuest, totalTime, restTime) {
     var questBlocks = document.querySelectorAll('.question-item')
     var userPoint = 0
     var totalPoint = 0
@@ -145,33 +157,52 @@ function submitAnswers(listQuest) {
         currQuest.correctAnswers.forEach(ans => {
             questBlock.querySelector(`.answer_${ans}`).classList.add('enabled')
         })
+        userAns.forEach(ans => {
+            if (currQuest.correctAnswers.includes(ans)) {
+                var labelBlock = questBlock.querySelector(`.answer_${ans}`)
+                var modifier = labelBlock.querySelector('.answer-item--modifier')
+                modifier.innerHTML = '<i style="color: rgb(0, 132, 0)" class="fa-solid fa-check"></i>'
+            }
+            else {
+                var labelBlock = questBlock.querySelector(`.answer_${ans}`)
+                var modifier = labelBlock.querySelector('.answer-item--modifier')
+                modifier.innerHTML = '<i style="color: rgb(255, 154, 151)" class="fa-solid fa-times"></i>'
+            }
+        })
     })
     
     document.querySelector('.submit-btn.btn').disabled = true
-    document.querySelector('.timer__icon').style.animation = 'none'
     document.querySelector('.scoreboard_pt').innerHTML = `Điểm số:
         <span class="scoreboard_pt-point">${userPoint}/${totalPoint}</span>
         `
+
+    var finishTime = totalTime - restTime
+    var minutes = Math.floor(finishTime / 60)
+    var seconds = finishTime % 60
+    document.querySelector('.timer-description').innerHTML = 'Tổng thời gian: '
+    document.querySelector('.timer-countdown').innerHTML = `${minutes < 10 ? '0' + minutes : minutes}: ${seconds < 10 ? '0' + seconds : seconds}s`
     document.querySelector('.scoreboard__modal').classList.add('open')
 
     handleScoreModal(userPoint, totalPoint)
-
-    return userPoint
 }
 
 function handleScoreModal(userPoint, totalPoint) {
     document.querySelector('.modal-score').innerHTML = `${userPoint}/${totalPoint}`
     var congratsBlock = document.querySelector('.congrats-description')
+    var resultElement = document.querySelector('.scoreboard_result')
     var modal = document.querySelector('.scoreboard__modal')
     var modalContainer = document.querySelector('.modal-container')
     var closeBtn = document.querySelector('.close-btn')
 
     if (userPoint === totalPoint) {
         congratsBlock.innerHTML = 'Hãy giữ phong độ nhé! <3'
+        resultElement.innerHTML = '<p style="color: #12a312; margin-top: 8px">Xuất sắc!</p>'
     } else if (userPoint >= totalPoint / 2) {
         congratsBlock.innerHTML = 'Cùng luyện tập nữa nào! ^^'
+        resultElement.innerHTML = '<p style="color: #d07407; margin-top: 8px">Đạt yêu cầu!</p>'
     } else {
         congratsBlock.innerHTML = 'Không đạt yêu cầu rồi ~.~'
+        resultElement.innerHTML = '<p style="color: #d63030; margin-top: 8px">Thất bại!</p>'
     }
 
     closeBtn.addEventListener('click', () => {

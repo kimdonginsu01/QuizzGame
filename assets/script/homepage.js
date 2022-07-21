@@ -1,11 +1,28 @@
 var testApi = 'http://localhost:3000/tests'
 
+var url = window.location.href
+var id = url.substring(url.lastIndexOf('?') + 1)
+var usersApi = `http://localhost:3000/users/${id}`
+
 start()
 
 async function start() {
+    renderUser()
+
     const tests = await getTests()
     await renderSidebarItem(tests)
     await handleQuestion(tests)
+}
+
+async function getUser() {
+    const response = await fetch(usersApi)
+    const data = await response.json()
+    return data
+}
+
+function renderUser() {
+    var user = JSON.parse(localStorage.getItem('User'))
+    document.querySelector('.user-greeting').innerHTML = `Xin chào ${user.fullname}!`
 }
 
 async function getTests() {
@@ -35,7 +52,7 @@ async function handleQuestion(tests) {
             var currTest = tests[id - 1]
             var listQuest = currTest.questions
 
-            location.replace(`http://127.0.0.1:5500/Pages/TestPage.html?id=${id}`)
+            location.replace(`http://127.0.0.1:5500/Pages/TestPage.html?${id}`)
         })
     })
 }
